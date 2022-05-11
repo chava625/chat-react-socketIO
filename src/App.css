@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Segoe UI", "Roboto", "Oxygen";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background: #22c1c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #22c1c3, #fdbb2da1); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #22c1c3, #fdbb2dde); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.chat {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff;
+}
+.enterName input[type="text"]{
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: 1px solid #22c0c3b7;
+  padding: 0 10px;
+  margin-top: 16px;
+}
+.enterName input[type="submit"]{
+  width: 100%;
+  background: #22c1c3;
+  border: 1px solid #22c0c349;
+  color: #fff;
+  border: none;
+  margin-top: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.messages {
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.createMessage {
+  height: 50px;
+  display: flex;
+}
+
+.createMessage input[type="text"]{
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: 1px solid #22c0c3b7;
+  border-radius: 15px 0 0 15px;
+  width: 85%;
+  padding: 0 10px;
+  margin-top: 16px;
+}
+
+.createMessage input[type="submit"]{
+  width: 15%;
+  background: #22c1c3;
+  border: 1px solid #22c0c349;
+  color: #fff;
+  border: none;
+  margin-top: 16px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.createMessage input[type="submit"]:hover,
+.createMessage input[type="submit"]:focus {
+  opacity: 0.8;
+}
+
+.message {
+  background:#0983850c ;
+  color: #583e06de;
+  border-radius: 0 10px 0px 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.message.myMessage {
+  background: #22c1c3;
+  color: #fff;
+  border-radius: 10px 0 10px 0px;
+}
